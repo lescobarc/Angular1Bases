@@ -19,14 +19,13 @@ export class MainPageComponent  {
       nombre: 'vegeta',
       poder: 7500
     }
-  ]
-
-  nuevo: Personaje ={
-    nombre: 'Trucks',
-    poder: 14000
+  ];
+   nuevo: Personaje ={
+    nombre: 'Maestro Roshi',
+    poder: 18000
   }
 
-agregar(  ){
+/* agregar(  ){
   if(this.nuevo.nombre.trim().length === 0){
     return;
   }
@@ -36,7 +35,7 @@ agregar(  ){
     nombre: '',
     poder: 0
   }
-}
+}  */
 
 /* cambiarNombre( event: any ){
   console.log(event.target.value)
