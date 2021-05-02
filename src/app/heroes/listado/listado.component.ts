@@ -12,6 +12,7 @@ export class ListadoComponent {
 
   borrarHeroe(): void{
     this.heroeBorrado = this.heroes.shift() || '';
+    
   }
   
 }
