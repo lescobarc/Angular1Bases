@@ -14,10 +14,14 @@
 </ul>
  
 <!-- <div *ngIf=' heroeBorrado !== "" ' > -->
-<div *ngIf=' heroeBorrado ' >
-    <h3>Héroe Borrado</h3>
-    <small>{{heroeBorrado}}</small>
+<div *ngIf=' heroeBorrado; else noBorrado ' >
+    <h3>Héroe Borrado: <small>{{heroeBorrado}}</small></h3>
 </div>
 
+<ng-template #noBorrado>
+    <h3>No ha borrado nada</h3>
+</ng-template>
+
+<br>
 <button (click)="borrarHeroe()"> Borrar </button>
 
