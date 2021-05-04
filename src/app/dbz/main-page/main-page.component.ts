@@ -11,16 +11,11 @@ import { DbzService } from '../services/dbz.service';
 })
 export class MainPageComponent {
 
-  personajes: Personaje[] = [
-    {
-      nombre: 'Goku',
-      poder: 15000
-    },
-    {
-      nombre: 'vegeta',
-      poder: 7500
-    }
-  ];
+  //personajes: Personaje[] = [];
+ /*  get personajes(): Personaje[]{
+    return this.dbzService.personajes;
+  } */
+
   nuevo: Personaje = {
     nombre: 'Maestro Roshi',
     poder: 18000
@@ -43,13 +38,13 @@ export class MainPageComponent {
   } */
 
 
-  agregarNuevoPersonaje(argumento: Personaje) {
+  /* agregarNuevoPersonaje(argumento: Personaje) {
     console.log('Main page component');
     console.log(argumento);
     this.personajes.push(argumento);
-  }
+  } */
 
   constructor(private dbzService: DbzService) {
-    
+    //this.personajes = this.dbzService.personajes;
   }
 }
