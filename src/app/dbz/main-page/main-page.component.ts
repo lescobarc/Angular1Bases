@@ -41,4 +41,10 @@ export class MainPageComponent  {
   console.log(event.target.value)
 } */
 
+
+agregarNuevoPersonaje( argumento: Personaje){
+  console.log('Main page component');
+  console.log(argumento);
+  this.personajes.push( argumento );
+}
 }

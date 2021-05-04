@@ -12,7 +12,7 @@
     </div>
 
     <div class="col">
-        <app-agregar [data]="personajes" [nuevo]="nuevo"></app-agregar>
+        <app-agregar [nuevo]="nuevo" (onNuevoPersonaje)="agregarNuevoPersonaje( $event)"></app-agregar>
         <!-- <h3>Agregar <small>{{nuevo.nombre}}</small></h3>
         <hr>
 
@@ -24,7 +24,8 @@
             <!-- <input placeholder="Poder" type="number" name = "poder" [(ngModel)]="nuevo.poder"/>
 
             <button type="submit">
-                Agregar
+                Agregar.
+                +
             </button>
         </form> -->
     </div>
